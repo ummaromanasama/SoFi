@@ -3,7 +3,6 @@ const regex = /(?<=[a-z])\d+\.\d+(?=\$)/gi;
 const numbers = data
   .match(regex)
   .map(Number);
-
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
 }
